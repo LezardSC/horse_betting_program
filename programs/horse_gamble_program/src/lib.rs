@@ -59,7 +59,7 @@ pub mod horse_betting {
         let total_pool = race.total_pool;
         let payout_u128 = (bet.amount as u128)
             .checked_mul(total_pool as u128).unwrap()
-            .checked_div(total_on_winner as u128).unwrap();
+            .checked_div(total_on_winner as u128).unwrap(); // gain = user bet / total bet on horse * total bet overall
         let payout = payout_u128 as u64;
         let race_info = race.to_account_info();
         let user_info = ctx.accounts.user.to_account_info();
