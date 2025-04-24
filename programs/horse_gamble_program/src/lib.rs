@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::{program::invoke_signed, system_instruction};
 
-declare_id!("YourProgramIdHere..."); // replace with actual program ID when deploying
+declare_id!("H6xPQtqcBb8KUXi7afFgBk2t6Q15oeXqBsDJgPUCgF8u");
 
 #[program]
 pub mod horse_betting {
